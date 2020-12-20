@@ -42,7 +42,7 @@
                     </td>
                     <td>
                         <select id="select" name="category">
-                            <option>-----Select Category-----</option>
+                            <option value="3">-----Select Category-----</option>
                             <?php
                                 $cat = new Category();
                                 $catList = $cat->showCategory();
@@ -63,7 +63,7 @@
                     </td>
                     <td>
                         <select id="select" name="brand">
-                            <option>-----Select Brand-----</option>
+                            <option value="3">-----Select Brand-----</option>
                             <?php
                                 $brand = new Brand();
                                 $brandList = $brand->showBrand();
@@ -111,7 +111,7 @@
                     </td>
                     <td>
                         <select id="select" name="type">
-                            <option>Select Type</option>
+                            <option value="3">Select Type</option>
                             <option value="1">Featured</option>
                             <option value="0">Non-Featured</option>
                         </select>

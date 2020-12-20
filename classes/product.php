@@ -41,26 +41,44 @@
 			$uploaded_image = "uploads/".$unique_image;
 
 
-			if($productName == "" || $category == "" || $brand == "" || $productDesc == "" || $price == "" || $type == "" || $file_name == "") {
+			if($productName == "" || $category == 3 || $brand == 3 || $productDesc == "" || $type == 3 || $type == "" || $file_name == "") {
 
 				$alert = "<span class='error'>Fields must be not empty</span>";
 				return $alert;
 
 			} else {
 
-				move_uploaded_file($file_temp, $uploaded_image);
-				$query  = "INSERT INTO tbl_product(productName,catId,brandId,productDesc,type,price,image) VALUES('$productName','$category','$brand','$productDesc','$type','$price','$unique_image') ";
-				$result =  $this->db->insert($query);
+				if(!empty($file_name)){
+					//Nếu chọn ảnh
+					if ($file_size > 2048000) {
 
-				if ($result) {
-
-						$alert = "<span class='success'>Insert Product Successfully</span>";
+			    		$alert = "<span class='error'>Image Size should be less then 2MB!</span>";
 						return $alert;
-					
-				} else {
 
-						$alert = "<span class='error'>Insert Product Not Success</span>";
+				    } 
+
+					elseif (in_array($file_ext, $permited) === false) {
+
+				    	$alert = "<span class='error'>You can upload only:-".implode(', ', $permited)."</span>";
 						return $alert;
+
+					}
+
+
+					move_uploaded_file($file_temp, $uploaded_image);
+					$query  = "INSERT INTO tbl_product(productName,catId,brandId,productDesc,type,price,image) VALUES('$productName','$category','$brand','$productDesc','$type','$price','$unique_image') ";
+					$result =  $this->db->insert($query);
+
+					if ($result) {
+
+							$alert = "<span class='success'>Insert Product Successfully</span>";
+							return $alert;
+						
+					} else {
+
+							$alert = "<span class='error'>Insert Product Not Success</span>";
+							return $alert;
+					}
 				}
 
 			}

@@ -1,0 +1,117 @@
+﻿====================================1 WEBSITE PHP CẦN PHẢI CÓ===============================
+
+
+PHẦN 1: THUẬT NGỮ CƠ BẢN 
+1:(Text Editor-IDE: là những phần mềm để viết code 
+text editor là những phần mền miễn phí như: sublime,notepad++
+IDE thì là những phần mềm cao cấp hơn và thường có phí như:Zend,netbean,esclip v.v)
+2:(Website responsive là : chạy,hiển thị tốt trên cả máy tính lẫn các thiết bị như điện thoại,ipad v.v)
+3:(Theme là : phần hiển thị trên trang web có thể tự mình design or mua từ các trang web khác có trả phí)
+4:(XAMPP tạo ra Locallhost,Hosting-Domain(Địa chỉ nhà)-FTP Account)
+
+PHẦN 2: GIAO DIỆN, CHỨC NĂNG CỦA 1 WEBSITE: 
+
+PHẦN 3: QUY TRÌNH ĐƠN GIẢN XÂY DỰNG 1 WEBSITE:
+1:Xác định thể loại Website cần xây dựng (tin tức hay là bán hàng v.v)
+2:liệt kê các chức năng cần xây dựng (tham khảo các trang web phổ biến như news.zing.vn,tuoitre.vn v.v,,,,và liệt kê chức năng cho từng nhóm đối tượng)
+3:Phân tích và thiết kế csdl
+4:Xây dựng giao diện
+5:Xây dựng chức năng 
+6:Test and Opimize (kiểm tra hoạt động đúng hay chưa và tối ưu lại thời gian load)
+7:Puclish (đưa lên trang web nào đó để người có thể truy cập vào)
+8:Seo and Marketing
+
+PHẦN 4: KIẾN THỨC CẦN TRANG BỊ:
+1:Xây dựng giao diện bao gồm : 
+a)HTML CSS
+b)PhotoShop
+c)Convert PSD to HTML CSS (PSD: là file giao diện thiết kế trên photoshop..,theme tải trên mạng về) 
+d)Javascript-jQuery(tạo hiệu ứng cho trang)
+e)Bootstrap(xây dựng giao diện web responsive)
+2:Xây dựng chức năng bao gồm :(MVC, OOP(lập trình hướng đối tượng), PHP, Design pattern)
+
+3:Test and Opimize bao gồm : (Ajax, Json, XML để tối ưu thời gian)
+
+4:Puclish bao gồm : (Sử dụng hosting cơ bản và duy trì hoạt động(viết bài,Seo))
+
+PHẦN 5: CÁC CHỨC NĂNG CẦN PHẢI CÓ:
+
+1:Nhóm người sử dụng bình thường(GUEST) bao gồm : 
+a)Register : (Form Register càng đơn giản càng tốt VÀ Send email activation để kích hoạt tài khoản của khách(kích hoạt qua chính email của chính họ) VÀ Captcha )
+b)View category : (doanh mục, chuyên mục)
+c)View item : (thông tin chi tiết của View category)
+d)Add to Cart : (add, delete, update, check out sản phẩm vào giỏ hàng)
+e)Sort-Pagination-Filter-Search-Contact :
+sort là : sắp xếp hàng theo giá trị tăng dần, giảm dần, hot, sp bán nhiều nhất để hiển thị lên trước để người dùng để chọn mua hơn
+pagination là : phân trang
+filter là : tìm kiếm sản phẩm theo tiêu chí mà chúng ta muốn 
+contact : gửi 1 liên hệ nào đó đến người quản trị 
+f)jQuery-Ajax : (Load more, tab)
+g)Optimize : (Cache, XML-Json-File Text(Category và footer))
+
+2:Nhóm người dùng(USER) bao gồm : 
+a)Login-Logout-Quên mk : (Login, quên mk-active qua email)
+b)User : 
+Cart : giỏ hàng của mình để điều chỉnh sp
+History : hiển thị những lần mua sản phẩm trước và sau 
+User Profile : cập nhật lại tt của người dùng, avata, đổi mk
+
+3:Nhóm Admin bao gồm :
+a)Quản lý User : xem được trong hệ thống của mình hiện tại có những người dùng nào
+b)Quản lý Group : xem trong hệ thống có những nhóm người nào : nhóm người dùng hay nhóm guest hay nhóm Admin lv1 , lv2
+c)Phân quyền : Admin có quyền gì, user có quyền gì v.v(không cần quá đầu tư)
+d)Quản lý Category : chuyên mục tin, doanh mục sản phẩm
+e)Quản lý Item : Sản phẩm, Bài viết, Đơn hàng
+f)Cấu hình hệ thống : Banner, Mail, v.v
+
+4:CRUD : 
+a)Create(Add)
+b)Read(View-Info)
+c)Update(Edit)
+d)Delete
+f)Sort(ASC, DESC)
+g)Pagination
+h)Search
+i)Change status
+j)Change mutil status
+k)Mutil Delete
+
+
+PHẦN 6: TRANG BỊ KIẾN THỨC CHO MÌNH:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
