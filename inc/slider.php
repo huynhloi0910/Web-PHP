@@ -9,7 +9,7 @@
 				 ?>
 				<div class="listview_1_of_2 images_1_of_2">
 					<div class="listimg listimg_2_of_1">
-						 <a href="details.php"> <img src="admin/uploads/<?php echo $resultdell['image'] ?>" alt="" /></a>
+						<a href="details.php"> <img src="admin/uploads/<?php echo $resultdell['image'] ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
 						<h2>Dell</h2>
@@ -61,7 +61,7 @@
 			    ?>
 
 				<?php
-				$getLastestHW = $prd->getLastestHuawei();
+				$getLastestHW = $prd->getLastestAsus();
 				if($getLastestHW){
 					while($result_hw = $getLastestHW->fetch_assoc()){
 				 ?>		
@@ -70,7 +70,7 @@
 						 <a href="details.php"> <img src="admin/uploads/<?php echo $result_hw['image'] ?>" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
-						<h2>Huawei</h2>
+						<h2>Asus</h2>
 						<p><?php echo $fm->textShorten($result_hw['productName'],35) ?></p>
 						<div class="button"><span><a href="details.php?productId=<?php echo $result_hw['productId'] ?>">Add to Cart</a></span></div>
 				   </div>

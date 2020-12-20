@@ -42,7 +42,7 @@
 			// echo "</prev>";
 			// echo $unique_image;
 
-			if($sliderName=="" || $type==""){
+			if($sliderName=="" || $file_size == 0 || $type == 3){
 
 				$alert = "<span class='error'>Fields must be not empty</span>";
 				return $alert;

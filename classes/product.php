@@ -127,7 +127,7 @@
 				if(!empty($file_name)){
 
 					//Nếu người dùng chọn ảnh
-					if ($file_size > 20480) {
+					if ($file_size > 204800) {
 
 			    		 $alert = "<span class='error'>Image Size should be less then 2MB!</span>";
 						return $alert;
@@ -269,28 +269,28 @@
 
 		public function getLastestDell()
 		{
-			$query = "SELECT * FROM tbl_product where brandId = '4' order by productId desc limit 1";
+			$query = "SELECT * FROM tbl_product where brandId = '3' and catId = '2' limit 1";
 			$result = $this->db->select($query);
 			return $result;	
 		}
 
-		public function getLastestHuawei()
+		public function getLastestAsus()
 		{
-			$query = "SELECT * FROM tbl_product where brandId = '3' order by productId desc limit 1";
+			$query = "SELECT * FROM tbl_product where brandId = '8' and catId = '3' limit 1";
 			$result = $this->db->select($query);
 			return $result;	
 		}
 
 		public function getLastestApple()
 		{
-			$query = "SELECT * FROM tbl_product where brandId = '2' order by productId desc limit 1";
+			$query = "SELECT * FROM tbl_product where brandId = '3' and catId = '4' limit 1";
 			$result = $this->db->select($query);
 			return $result;	
 		}
 
 		public function getLastestSamsung()
 		{
-			$query = "SELECT * FROM tbl_product where brandId = '1' order by productId desc limit 1";
+			$query = "SELECT * FROM tbl_product where brandId = '2' and catId = '8' limit 1";
 			$result = $this->db->select($query);
 			return $result;	
 		}

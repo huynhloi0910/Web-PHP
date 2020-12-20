@@ -61,7 +61,6 @@
             <div class="wrapper_method">
                 <h3 class="payment">Choose your method payment</h3>
                 <a href="offlinepayment.php">Offline payment</a>
-                <a href="onlinepayment.php">Online payment</a>
                 <br><br><br>
                 <a style="background:grey" href="cart.php"> << Back to your cart</a>
             </div>

@@ -45,7 +45,7 @@
                     </td>
                     <td>
                         <select name="type">
-                            <option>-----Select Type-----</option>
+                            <option value="3">-----Select Type-----</option>
                             <option value="1">On</option>
                             <option value="0">Off</option>
                         </select>

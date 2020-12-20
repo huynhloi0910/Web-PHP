@@ -18,11 +18,13 @@
     }
 
 ?>
- <?php
+
+
+<!--  <?php
 	if(!isset($_GET['id'])){
 		echo "<meta http-equiv='refresh' content='0;URL=?id=live'>";
 	}
-?>
+?> -->
 
  <div class="main">
     <div class="content">
@@ -77,7 +79,7 @@
 									?>
 									
 								</td>
-								<td><a onclick = "return confirm('Are you want to delete???')" href="?cartId=<?php echo $result['cartId'] ?>">Xóa</a></td>			
+								<td><a onclick = "return confirm('Are you want to delete???')" href="?cartId=<?php echo $result['cartId'] ?>">Delete</a></td>			
 
 							</tr>	
 							<?php	
